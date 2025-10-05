@@ -1,5 +1,7 @@
-# Laporan Project Crawl Data
-Nama : Aminah Nur'aini Muchayati \\
+# Analisis Sentimen tentang Slogan Work-Life Balance
+Nama : Aminah Nur'aini Muchayati
+
+
 NRP : 5024231034
 
 # Pendahuluan
