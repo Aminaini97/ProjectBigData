@@ -58,7 +58,7 @@ analisis.py                # Analisis sentimen & visualisasi
    - Gabungkan data Reddit & YouTube dengan `gabung.py`.
 
 4. **Analisis Sentimen**
-   - Jalankan `analisis.py` atau `sentiment_analysis.py` untuk mendapatkan label sentimen.
+   - Jalankan `analisis.py` untuk mendapatkan label sentimen.
 
 5. **Visualisasi & Integrasi Tableau Desktop**
    - Hasil akhir (CSV) dapat diimpor ke Tableau Desktop untuk analisis dan visualisasi lebih lanjut.
@@ -100,6 +100,12 @@ Distribusi sentimen yang didominasi oleh kategori netral adalah hal yang umum da
 - Model analisis sentimen yang digunakan cenderung "conservative" dalam mendeteksi emosi negatif.
 - Data yang diambil belum sepenuhnya mewakili seluruh spektrum opini (misal: sampling bias, kata kunci kurang variatif).
 
+## Kesimpulan
+
+Analisis sentimen terhadap komentar publik mengenai Work-Life Balance di Reddit dan YouTube menunjukkan bahwa mayoritas diskusi bersifat netral, dengan proporsi sentimen positif yang juga cukup besar dan sentimen negatif yang relatif kecil. Hal ini mengindikasikan bahwa masyarakat cenderung membahas isu ini secara informatif dan berbagi pengalaman tanpa banyak ekspresi emosi ekstrem. Namun, masih terdapat tantangan dan keluhan terkait stres kerja dan burnout yang perlu diperhatikan. Untuk mendapatkan gambaran yang lebih komprehensif dan akurat, disarankan melakukan perluasan data, tuning model, serta validasi manual pada hasil analisis. Temuan ini dapat menjadi dasar bagi perusahaan, pembuat kebijakan, maupun individu untuk meningkatkan perhatian terhadap pentingnya keseimbangan antara pekerjaan dan kehidupan pribadi.
+
+---
+
 ### Saran Perbaikan
 
 1. **Perluasan Kata Kunci & Sumber Data:**
@@ -114,11 +120,3 @@ Distribusi sentimen yang didominasi oleh kategori netral adalah hal yang umum da
    - Buat visualisasi tambahan (misal: distribusi sentimen per topik, per waktu, dsb) untuk menemukan insight lebih dalam.
 
 Dengan langkah-langkah di atas, hasil analisis sentimen dapat menjadi lebih representatif dan akurat untuk pengambilan keputusan atau penelitian lanjutan.
-
-## Kesimpulan
-
-Analisis sentimen terhadap komentar publik mengenai Work-Life Balance di Reddit dan YouTube menunjukkan bahwa mayoritas diskusi bersifat netral, dengan proporsi sentimen positif yang juga cukup besar dan sentimen negatif yang relatif kecil. Hal ini mengindikasikan bahwa masyarakat cenderung membahas isu ini secara informatif dan berbagi pengalaman tanpa banyak ekspresi emosi ekstrem. Namun, masih terdapat tantangan dan keluhan terkait stres kerja dan burnout yang perlu diperhatikan. Untuk mendapatkan gambaran yang lebih komprehensif dan akurat, disarankan melakukan perluasan data, tuning model, serta validasi manual pada hasil analisis. Temuan ini dapat menjadi dasar bagi perusahaan, pembuat kebijakan, maupun individu untuk meningkatkan perhatian terhadap pentingnya keseimbangan antara pekerjaan dan kehidupan pribadi.
-
----
-
-Silakan modifikasi sesuai kebutuhan spesifik proyek Anda!
