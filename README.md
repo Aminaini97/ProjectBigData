@@ -17,4 +17,4 @@ Proyek ini berfokus pada pengumpulan dan analisis sentimen komentar publik terka
 # Teknologi dan Library
 - Bahasa Pemrograman: Python
 
-- Library: pandas, numpy, BeautifulSoup, PRAW, google-api-python-client, NLTK, TextBlob, matplotlib, seaborn
+- Library: pandas, praw, googleapiclient.discovery (YouTube API), os, deep_translator, textblob, wordcloud, matplotlib, collections, nltk, Sastrawi, emoji
