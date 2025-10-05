@@ -2,9 +2,8 @@ from deep_translator import GoogleTranslator
 import time
 import pandas as pd
 import os 
-# ===============================================
+
 # 1. DEFINISI FILE INPUT
-# ===============================================
 #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 #FILE_INPUT = os.path.join(BASE_DIR, '..', '2.Pra-perosesan', 'reddit_crawl_clean.csv') 
 # Pastikan nama file ini sudah BENAR dan file ada di folder yang sama
@@ -20,10 +19,8 @@ except FileNotFoundError as e:
     print(f"❌ ERROR: File '{FILE_NAME}' TIDAK DITEMUKAN di folder ini. Cek ejaan file.")
     exit()
 
-# ===============================================
-# 2. FUNGSI DAN EKSEKUSI TRANSLASI
-# ===============================================
 
+# 2. FUNGSI DAN EKSEKUSI TRANSLASI
 translator = GoogleTranslator(source='id', target='en')
 
 def batch_translate_safe(texts, batch_size=100):

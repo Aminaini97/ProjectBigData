@@ -18,10 +18,7 @@ except FileNotFoundError:
     print(f"❌ ERROR: File '{FILE_INPUT}' tidak ditemukan. Pastikan file ada di direktori yang sama.")
     exit()
 
-# ===============================================
-# 2️⃣ FUNGSI PEMBERSINAN (PRE-PROCESSING)
-# ===============================================
-
+# FUNGSI PEMBERSINAN (PRE-PROCESSING)
 # Stopword remover Sastrawi
 factory = StopWordRemoverFactory()
 stopword_remover = factory.create_stop_word_remover()

@@ -6,7 +6,7 @@ import emoji
 # Import time untuk debugging/simulasi, tapi tidak diperlukan untuk cleaning ini
 # import time 
 
-# 1️⃣ DEFINISI DATASET DAN PEMUATAN (WAJIB DITAMBAHKAN)
+# DEFINISI DATASET DAN PEMUATAN (WAJIB DITAMBAHKAN)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 FILE_INPUT = os.path.join(BASE_DIR, '..', 'Crawl_Data', 'youtube_comments.csv') 
@@ -22,10 +22,7 @@ except FileNotFoundError:
     print(f"❌ ERROR: File '{FILE_INPUT}' tidak ditemukan. Mohon periksa nama dan jalur file.")
     exit()
 
-# ===============================================
-# 2️⃣ FUNGSI PEMBERSINAN (PRE-PROCESSING)
-# ===============================================
-
+# FUNGSI PEMBERSINAN (PRE-PROCESSING)
 # Stopword remover
 factory = StopWordRemoverFactory()
 stopword_remover = factory.create_stop_word_remover()
@@ -64,9 +61,7 @@ def clean_text(text):
     
     return text.strip()
 
-# ===============================================
-# 3️⃣ APLIKASI DAN PENYIMPANAN
-# ===============================================
+# APLIKASI DAN PENYIMPANAN
 
 # Terapkan fungsi clean_text ke kolom komentar yang benar
 df["clean_text"] = df[COLUMN_KOMENTAR].apply(clean_text)

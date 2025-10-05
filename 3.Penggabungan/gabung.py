@@ -1,9 +1,9 @@
 import pandas as pd
 import os
 
-# ===============================================
+
 # 1. DEFINISI FILE INPUT
-# ===============================================
+
 
 FILE_YOUTUBE = 'hasil_terjemahan_yt.csv'
 FILE_REDDIT = 'hasil_terjemahan_r.csv'
@@ -13,9 +13,9 @@ FILE_OUTPUT = 'data_komentar_gabungan_final.csv'
 # Asumsi: clean_text (ID) dan translated (EN) sudah ada di kedua file.
 KOLOM_INTI = ['clean_text', 'translated'] 
 
-# ===============================================
+
 # 2. MUAT, TANDAI, DAN SELARASKAN DATA
-# ===============================================
+
 
 try:
     # --- Data YouTube ---
@@ -47,18 +47,18 @@ except KeyError as e:
     print(f"ERROR: Kolom {e} tidak ditemukan di salah satu file CSV. Periksa output cleaning.")
     exit()
 
-# ===============================================
+
 # 3. GABUNGKAN DATA (Concatenate)
-# ===============================================
+
 
 # Menggabungkan kedua DataFrame yang sekarang memiliki struktur kolom yang sama
 df_gabungan = pd.concat([df_youtube, df_reddit], ignore_index=True)
 
 print(f"\nPenggabungan berhasil. Total data gabungan: {len(df_gabungan)} baris.")
 
-# ===============================================
+
 # 4. SIMPAN HASIL AKHIR
-# ===============================================
+
 
 # Penghapusan duplikasi
 df_gabungan.drop_duplicates(subset=['clean_text', 'Platform'], inplace=True)

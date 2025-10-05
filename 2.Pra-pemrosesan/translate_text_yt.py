@@ -3,9 +3,9 @@ import time
 import pandas as pd
 # Import os TIDAK diperlukan karena file berada dalam folder yang sama
 
-# ===============================================
+
 # 1. DEFINISI FILE INPUT
-# ===============================================
+
 
 # Pastikan nama file ini sudah BENAR dan file ada di folder yang sama
 FILE_NAME = "youtube_comments_clean.csv" 
@@ -20,9 +20,9 @@ except FileNotFoundError as e:
     print(f"❌ ERROR: File '{FILE_NAME}' TIDAK DITEMUKAN di folder ini. Cek ejaan file.")
     exit()
 
-# ===============================================
+
 # 2. FUNGSI DAN EKSEKUSI TRANSLASI
-# ===============================================
+
 
 translator = GoogleTranslator(source='id', target='en')
 
