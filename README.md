@@ -14,4 +14,7 @@ Proyek ini berfokus pada pengumpulan dan analisis sentimen komentar publik terka
 - Analisis sentimen komentar menjadi positif, negatif, atau netral.
 
 - Visualisasi opini publik terhadap slogan WLB.
-# 
+# Teknologi dan Library
+- Bahasa Pemrograman: Python
+
+- Library: pandas, numpy, BeautifulSoup, PRAW, google-api-python-client, NLTK, TextBlob, matplotlib, seaborn
