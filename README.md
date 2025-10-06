@@ -58,7 +58,7 @@ analisis.py                # Analisis sentimen & visualisasi
    - Gabungkan data Reddit & YouTube dengan `gabung.py`.
 
 4. **Analisis Sentimen**
-   - Jalankan `analisis.py` atau `sentiment_analysis.py` untuk mendapatkan label sentimen.
+   - Jalankan `analisis.py` untuk mendapatkan label sentimen.
 
 5. **Visualisasi & Integrasi Tableau Desktop**
    - Hasil akhir (CSV) dapat diimpor ke Tableau Desktop untuk analisis dan visualisasi lebih lanjut.
