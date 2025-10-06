@@ -14,7 +14,7 @@ Proyek ini berfokus pada pengumpulan dan analisis sentimen komentar publik terka
 - Crawling data komentar dari Reddit dan YouTube berdasarkan kata kunci terkait WLB.
 - Pra-pemrosesan data: pembersihan teks, penghapusan stopword, dan normalisasi.
 - Terjemahan komentar (jika diperlukan) menggunakan Google Translate API.
-- Analisis sentimen menggunakan model NLP (TextBlob,Transformers, dsb).
+- Analisis sentimen menggunakan model TextBlob,Transformers, dsb.
 - Visualisasi hasil analisis (wordcloud, grafik, dsb).
 - Integrasi hasil ke Tableau Desktop untuk analisis lanjutan.
 
