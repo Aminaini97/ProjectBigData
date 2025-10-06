@@ -6,7 +6,7 @@ import os
 
 # 1. DEFINISI FILE INPUT
 # Pastikan nama file ini sudah BENAR dan file ada di folder yang sama
-FILE_NAME = "youtube_comments_clean.csv" 
+FILE_NAME = "youtube_crawl_clean.csv" 
 COLUMN_KOMENTAR = "clean_text" # Kolom yang akan diterjemahkan
 
 try:
@@ -20,7 +20,7 @@ except FileNotFoundError as e:
 
 
 # 2. FUNGSI DAN EKSEKUSI TRANSLASI
-translator = GoogleTranslator(source='en', target='id')
+translator = GoogleTranslator(source='id', target='en')
 
 def batch_translate_safe(texts, batch_size=100):
     results = []
