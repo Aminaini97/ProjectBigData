@@ -21,7 +21,7 @@ except FileNotFoundError as e:
 
 
 # 2. FUNGSI DAN EKSEKUSI TRANSLASI
-translator = GoogleTranslator(source='id', target='en')
+translator = GoogleTranslator(source='en', target='id')
 
 def batch_translate_safe(texts, batch_size=100):
     results = []
@@ -55,5 +55,5 @@ def batch_translate_safe(texts, batch_size=100):
 df["translated"] = batch_translate_safe(df[COLUMN_KOMENTAR].tolist())
 
 # Simpan hasilnya
-df.to_csv("hasil_terjemahan.csv", index=False)
+df.to_csv("hasil_terjemahan_r.csv", index=False)
 print("✅ Translasi selesai dan disimpan ke 'hasil_terjemahan.csv'")

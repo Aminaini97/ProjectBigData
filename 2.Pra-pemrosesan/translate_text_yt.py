@@ -1,12 +1,10 @@
 from deep_translator import GoogleTranslator
 import time
 import pandas as pd
-# Import os TIDAK diperlukan karena file berada dalam folder yang sama
+import os 
 
 
 # 1. DEFINISI FILE INPUT
-
-
 # Pastikan nama file ini sudah BENAR dan file ada di folder yang sama
 FILE_NAME = "youtube_comments_clean.csv" 
 COLUMN_KOMENTAR = "clean_text" # Kolom yang akan diterjemahkan
@@ -22,9 +20,7 @@ except FileNotFoundError as e:
 
 
 # 2. FUNGSI DAN EKSEKUSI TRANSLASI
-
-
-translator = GoogleTranslator(source='id', target='en')
+translator = GoogleTranslator(source='en', target='id')
 
 def batch_translate_safe(texts, batch_size=100):
     results = []
