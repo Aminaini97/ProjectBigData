@@ -57,3 +57,4 @@ df = pd.DataFrame(comments)
 df.to_csv("youtube_comments_worklifebalance_full.csv", index=False)
 
 print(f"✅ Total komentar disimpan: {len(df)}")
+
