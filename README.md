@@ -88,7 +88,7 @@ Distribusi Sentimen (%) per Platform:
 - Sebagian besar komentar di kedua platform menunjukkan sentimen **netral**.
 - Sentimen positif juga cukup signifikan, sedangkan sentimen negatif relatif kecil.
 - Topik yang sering muncul meliputi stres kerja, burnout, dan tantangan menjaga keseimbangan antara pekerjaan dan kehidupan pribadi.
-- Visualisasi wordcloud memperlihatkan kata-kata kunci seperti "kerja", "waktu", "keluarga", dan "lelah" sering muncul dalam diskusi.
+- Visualisasi wordcloud memperlihatkan kata-kata kunci seperti "burnout", "time", "stress", dan "much" sering muncul dalam diskusi.
 
 ## Evaluasi Hasil & Saran Perbaikan
 
